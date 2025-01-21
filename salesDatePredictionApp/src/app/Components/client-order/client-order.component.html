@@ -1,0 +1,51 @@
+<div class="header-container">
+    <p>{{ data.CustomerName }} - Orders</p>
+</div>
+    <div class="mat-elevation-z8 main-container">
+        <table mat-table [dataSource]="dataSource" matSort (matSortChange)="sortData($event)" >
+      
+          <ng-container matColumnDef="orderId">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Order ID </th>
+            <td mat-cell *matCellDef="let order"> {{ order.OrderId }} </td>
+          </ng-container>
+      
+          <ng-container matColumnDef="requiredDate">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Require Date </th>
+            <td mat-cell *matCellDef="let order"> {{ order.RequiredDate | date:'M/d/yyyy, HH:mm:ss' }} </td>
+          </ng-container>
+      
+          <ng-container matColumnDef="shippedDate">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Shipped Date </th>
+            <td mat-cell *matCellDef="let order"> {{ order.ShippedDate | date:'M/d/yyyy, HH:mm:ss' }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="shipName">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Ship Name </th>
+            <td mat-cell *matCellDef="let order"> {{ order.ShipName  }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="shipAddress">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Ship Address </th>
+            <td mat-cell *matCellDef="let order"> {{ order.ShipAddress }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="shipCity">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Ship City </th>
+            <td mat-cell *matCellDef="let order"> {{ order.ShipCity }} </td>
+          </ng-container>
+      
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      
+        <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                       showFirstLastButtons
+                       aria-label="Select page of periodic elements">
+        </mat-paginator>
+        <div mat-dialog-actions class="dialog-actions">
+            <button mat-button (click)="close()" class="close-btn">CLOSE</button>
+          </div>
+    </div>
+      
+
+

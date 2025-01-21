@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gráfico de Barras con D3.js</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #chart {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <label for="data-input">Source Data:</label>
+  <input type="text" id="data-input" placeholder="Ejemplo: 10,20,30,40,50" />
+  <button id="update-data">Update Data</button>
+
+  <div id="chart"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

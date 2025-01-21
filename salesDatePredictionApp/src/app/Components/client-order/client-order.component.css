@@ -1,0 +1,50 @@
+/* table */
+.main-container{
+    border-radius: 8px; 
+    overflow: hidden; 
+    padding: 15px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse; 
+  }
+  
+  th, td {
+    
+    text-align: left;
+    border-bottom: 1px solid #ddd; 
+  }
+
+  .header-container {
+    width: 100%; 
+    background-color: rgb(161, 20, 20);
+    color: white; 
+    padding: 2px; 
+    
+  }
+  
+  .header-container p {
+    margin-left: 5px; 
+    margin-top: 12px;
+  }
+  
+  /*Btn */
+  .dialog-actions {
+    display: flex;
+    justify-content: flex-end; 
+  }
+  
+  .close-btn {
+    background: none;          
+    border: none;  
+    cursor: pointer;
+    color: red; 
+    font-size: 14px; 
+    border: none;
+  }
+  
+  .close-btn:hover {
+    color: darkred; 
+  }
+  
+  

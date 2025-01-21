@@ -1,0 +1,91 @@
+.modal-container {
+    max-height: 80vh; 
+    overflow-y: auto;
+  }
+
+.main-container{
+    padding: 10px;
+}
+
+.header-container {
+    width: 100%; 
+    background-color: rgb(43, 161, 20);
+    color: white; 
+    padding: 2px; 
+    
+  }
+  
+  .header-container p {
+    margin-left: 5px; 
+    margin-top: 12px;
+  }  
+  
+  /*Btn */
+  .dialog-actions {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end; 
+  }
+  
+  .close-btn {
+    background: none;          
+    border: none;  
+    cursor: pointer;
+    color: rgb(43, 161, 20);
+    font-size: 14px; 
+    border: none;
+  }
+  
+  .close-btn:hover {
+    color: rgb(61, 119, 46); 
+  }
+
+
+  /* box */
+input.form-control {
+    border: none;
+    border-bottom: 2px solid #ccc; 
+    border-radius: 0;
+    padding-left: 0; 
+    padding-right: 0; 
+  }
+
+select.form-select {
+    border: none;
+    border-bottom: 2px solid #ccc; 
+    border-radius: 0; 
+    padding-left: 0; 
+    padding-right: 0; 
+  }
+  
+  input.form-control:focus {
+    border-bottom: 2px solid #007bff; 
+    box-shadow: none; 
+  }
+
+  select.form-select:focus {
+    border-bottom: 2px solid #007bff; 
+    box-shadow: none; 
+  }
+  
+  
+  .form-group, .row {
+    margin-bottom: 1.5rem; 
+  }
+
+  .col-md-4, .col-md-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+.form-control {
+    width: 100%;
+    padding: 10px;
+  }
+
+
+  input[type="date"]::before{
+    content: attr(placeholder);
+    color: #aaa;
+  }
+  
